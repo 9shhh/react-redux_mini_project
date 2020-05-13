@@ -1,0 +1,12 @@
+[react-redux]
+
+react : component(사용자 정의 태그)를 만들어서 체계적이고 잘 정돈된 application을 만드는 기술.
+redux : state를 중앙에서 관리하는것을 통해서 데이터가 예측하지 않은 상태로 변형되는 가능성을 낮추는 기술.
+
+react-redux : react와 redux를 쉽게 연동할 수 있음. 
+
+공통 : 개발의 복잡성을 낮춘다.
+
+@이점
+react-redux를 사용함으로써 기존에 react에서 불필요한 render로 인해 퍼포먼스가 낮아지고, 컴포넌트간 계층 구조로 제어하기 어려운 부분을
+중앙 store에서 처리하여 특정 컴포넌트에게 만 render 할수 있게됨. (소문으로만 동작하던 react라는 사회에 redux라는 언론사를 세운다)

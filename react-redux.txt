@@ -15,3 +15,30 @@ react-redux를 사용함으로써 기존에 react에서 불필요한 render로 �
 - presentational component : 보여지는 화면과 관련된 component
 - container component : redux store와 관련된 작업(동작)을 처리하는 component
 
+-----------------------------------------------------------------------------
+
+@ react-redux 모듈 설치 후 react-redux를 사용하기 위한 초기 작업 
+
+# index.js 소스 수정
+
+1) import {Provider} from 'react-redux'; // react-redux를 사용하기 위함
+2) import store from './store'; // redux store
+3) render 함수 안에 <App /> Provider로 감싸고 store를 props로 주입
+     =>  <Provider store={store}>
+           <App />
+          </Provider>,
+
+------------------------------------------------------------------------------
+
+* connect()() :
+-> 첫번째 괄호 안에 인자로 (a,b) 함수를 넘겨 받는다. (첫번째 인자 만 전달해도 상관 없음) 
+   -> a 함수의 의미는 mapReduxStateToReactProps로써 redux의 state를 react의 component props로 mapping(연결) 해준다 라는 의미.
+   -> b 함수의 의미는 mapReduxDispatchToReactProps로써 redux의 dispatch를 react의 component props로 mapping(연결) 해준다 라는 의미.
+-> 두번째 괄호 안에 인자로 component를 전달하면, 그것을 wrapping 하는 container component를 만들어 내는 함수.
+
+-> 등록해놓은 props만 실제로 구독을 하기 때문에 불필요한 렌더 함수 실행이 줄어 든다.
+   -> 즉 적은 코드로 높은 퍼포먼스를 얻을 수 있음.
+
+
+- 기타 
+undo, redo, hot reload 등의 기능을 제공 한다.

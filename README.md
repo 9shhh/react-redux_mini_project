@@ -3,3 +3,6 @@
 
 ### 순서
 - redux 없이 개발 -> redux 도입 -> redux를 효율적으로 사용하기 위한 방법 도입 -> react-redux 도입
+
+### 사용 모듈
+npm install react-redux

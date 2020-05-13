@@ -10,3 +10,8 @@ react-redux : react와 redux를 쉽게 연동할 수 있음.
 @이점
 react-redux를 사용함으로써 기존에 react에서 불필요한 render로 인해 퍼포먼스가 낮아지고, 컴포넌트간 계층 구조로 제어하기 어려운 부분을
 중앙 store에서 처리하여 특정 컴포넌트에게 만 render 할수 있게됨. (소문으로만 동작하던 react라는 사회에 redux라는 언론사를 세운다)
+
+
+- presentational component : 보여지는 화면과 관련된 component
+- container component : redux store와 관련된 작업(동작)을 처리하는 component
+
